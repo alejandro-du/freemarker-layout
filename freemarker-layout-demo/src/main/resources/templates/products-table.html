@@ -1,8 +1,8 @@
-<table>
+<table id="products" class="products">
     <tr>
         <th>Name</th>
         <th>Price</th>
-        <th>Action</th>
+        <th></th>
     </tr>
     <#list products as product>
         <tr>
@@ -12,3 +12,8 @@
         </tr>
     </#list>
 </table>
+<script type="text/javascript">
+    $('#products').ready(function() {
+        $('#products').paging({limit:10});
+    });
+</script>

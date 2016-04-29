@@ -1,10 +1,12 @@
 package org.vaadin.freemarker.demo.ui;
 
+import com.vaadin.annotations.StyleSheet;
 import com.vaadin.server.ClassResource;
 import com.vaadin.ui.Image;
 import org.vaadin.freemarker.FreemarkerLayout;
 import org.vaadin.freemarker.demo.backend.Product;
 
+@StyleSheet("vaadin://styles/product.css")
 public class ProductDetails extends FreemarkerLayout {
 
     private Product product;

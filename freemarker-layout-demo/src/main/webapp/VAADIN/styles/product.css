@@ -1,0 +1,33 @@
+.product {
+  margin: 20px;
+}
+
+.left {
+  float: left;
+  margin-right: 25px;
+  text-align: center;
+}
+
+.right {
+  float: right;
+  width: 250px;
+}
+
+.price {
+  font-weight: bolder;
+}
+
+.price {
+  font-weight: bolder;
+  font-size: larger;
+  margin-bottom: 12px;
+}
+
+.name {
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.description {
+  margin-bottom: 20px;
+}

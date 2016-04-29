@@ -1,12 +1,10 @@
-<table>
-    <tr>
-        <td><h2>$${product.price}</h2></td>
-        <td rowspan="3">${product.description}</td>
-    </tr>
-    <tr>
-        <td><span location="image"></span></td>
-    </tr>
-    <tr>
-        <td><b>${product.name}</b></td>
-    </tr>
-</table>
+<div class="product">
+    <div class="left">
+        <div class="price">$${product.price}</div>
+        <div class="image"><span location="image"></span></div>
+        <div class="name">${product.name?capitalize}</div>
+    </div>
+    <div class="right">
+        <div class="description">${product.description?cap_first}</div>
+    </div>
+</div>

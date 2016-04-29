@@ -33,7 +33,7 @@ public class ProductService {
     }
 
     private void createRandomProducts() {
-        for (long i = 0; i < 10; i++) {
+        for (long i = 1; i <= 30; i++) {
             Product product = new Product();
             product.setId(i);
             product.setName(getRandomWords(1));
