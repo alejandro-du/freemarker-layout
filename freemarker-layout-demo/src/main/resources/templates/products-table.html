@@ -1,0 +1,14 @@
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Action</th>
+    </tr>
+    <#list products as product>
+        <tr>
+            <td>${product.name?capitalize}</td>
+            <td>$${product.price}</td>
+            <td><span location="details-button-${product.id}"></span></td>
+        </tr>
+    </#list>
+</table>
