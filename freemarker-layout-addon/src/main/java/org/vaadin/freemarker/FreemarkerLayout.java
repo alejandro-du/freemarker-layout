@@ -20,6 +20,9 @@ public class FreemarkerLayout extends CustomLayout {
 
     private Object dataModel;
 
+    public FreemarkerLayout() {
+    }
+
     public FreemarkerLayout(String templateFileName) {
         this.templateFileName = templateFileName;
         this.dataModel = this;
@@ -44,6 +47,22 @@ public class FreemarkerLayout extends CustomLayout {
         } catch (IOException | TemplateException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public String getTemplateFileName() {
+        return templateFileName;
+    }
+
+    public void setTemplateFileName(String templateFileName) {
+        this.templateFileName = templateFileName;
+    }
+
+    public Object getDataModel() {
+        return dataModel;
+    }
+
+    public void setDataModel(Object dataModel) {
+        this.dataModel = dataModel;
     }
 
     public static Configuration getConfiguration() {

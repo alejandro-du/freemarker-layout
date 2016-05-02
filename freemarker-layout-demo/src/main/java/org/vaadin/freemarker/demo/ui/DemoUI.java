@@ -25,7 +25,7 @@ public class DemoUI extends UI {
     @Override
     protected void init(VaadinRequest vaadinRequest) {
         List<Product> products = service.findAll();
-        ProductTable productsTable = new ProductTable(products);
+        ProductsTable productsTable = new ProductsTable(products);
 
         VerticalLayout layout = new VerticalLayout(productsTable);
         layout.setMargin(true);

@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="VAADIN/styles/table.css"/>
+<link rel="stylesheet" href="VAADIN/styles/product.css"/>
+<link rel="stylesheet" href="VAADIN/styles/paging.css"/>
+
 <table id="products" class="products">
     <tr>
         <th>Name</th>
@@ -6,14 +10,13 @@
     </tr>
     <#list products as product>
         <tr>
-            <td>${product.name?capitalize}</td>
+            <td class="name">${product.name?capitalize}</td>
             <td>$${product.price}</td>
             <td><span location="details-button-${product.id}"></span></td>
         </tr>
     </#list>
 </table>
-<script type="text/javascript">
-    $('#products').ready(function() {
-        $('#products').paging({limit:10});
-    });
+
+<script>
+    window.$("#products").paging({limit:9});
 </script>

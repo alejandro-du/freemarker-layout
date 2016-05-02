@@ -39,7 +39,7 @@ public class ProductService {
             product.setName(getRandomWords(1));
             product.setDescription(getRandomWords(27));
             product.setPrice((double) (int) (Math.random() * (1000 - 300) + 300));
-            product.setImage(images[(int) (Math.random() * images.length)]);
+            product.setImage("/icons/" + images[(int) (Math.random() * images.length)]);
 
             products.add(product);
         }

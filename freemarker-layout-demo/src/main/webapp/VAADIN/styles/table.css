@@ -1,6 +1,7 @@
 .products {
   border-collapse: collapse;
   border-spacing: 0;
+  width: 250px;
 }
 
 .products td {
@@ -8,6 +9,10 @@
   overflow: hidden;
   word-break: normal;
   border-top: 1px solid #c5c5c5;
+}
+
+td.name {
+    width: 99%;
 }
 
 .products th {
