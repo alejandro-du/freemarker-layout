@@ -1,8 +1,10 @@
 package org.vaadin.freemarker.demo.ui;
 
 import com.vaadin.annotations.JavaScript;
+import com.vaadin.server.ClassResource;
 import com.vaadin.server.FontAwesome;
 import com.vaadin.ui.Button;
+import com.vaadin.ui.Image;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.Window;
 import org.vaadin.freemarker.FreemarkerLayout;
@@ -31,7 +33,12 @@ public class ProductsTable extends FreemarkerLayout {
     }
 
     private void showDetails(Product product) {
-        Window window = new Window("Details", new ProductDetails(product));
+        FreemarkerLayout productLayout = new FreemarkerLayout();
+        productLayout.setTemplateFileName("templates/product-details.html");
+        productLayout.setDataModel(product);
+        productLayout.addComponent(new Image(null, new ClassResource(product.getImage())), "image");
+
+        Window window = new Window("Details", productLayout);
         window.setModal(true);
         window.setResizable(false);
         UI.getCurrent().addWindow(window);
