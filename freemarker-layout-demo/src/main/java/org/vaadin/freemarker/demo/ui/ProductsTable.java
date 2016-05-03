@@ -1,6 +1,7 @@
 package org.vaadin.freemarker.demo.ui;
 
 import com.vaadin.annotations.JavaScript;
+import com.vaadin.annotations.StyleSheet;
 import com.vaadin.server.ClassResource;
 import com.vaadin.server.FontAwesome;
 import com.vaadin.ui.Button;
@@ -13,6 +14,7 @@ import org.vaadin.freemarker.demo.backend.Product;
 import java.util.List;
 
 @JavaScript({"vaadin://scripts/jquery-1.12.3.min.js", "vaadin://scripts/jquery-ui.js", "vaadin://scripts/paging.js"})
+@StyleSheet({"vaadin://styles/products-table.css", "vaadin://styles/product-details.css"})
 public class ProductsTable extends FreemarkerLayout {
 
     private List<Product> products;
