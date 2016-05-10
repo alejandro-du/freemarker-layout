@@ -51,5 +51,18 @@ public class ProductsTable extends FreemarkerLayout {
     ...
 }
 ```
+
+## Downloading and running the example application
+
+```
+git clone https://github.com/alejandro-du/freemarker-layout.git
+
+cd freemarker-layout/freemarker-layout-demo
+
+mvn clean install jetty:run
+
+```
+Go to [http://localhost:8080](http://localhost:8080)
+
 ## Licence
 The code is licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0.txt).
