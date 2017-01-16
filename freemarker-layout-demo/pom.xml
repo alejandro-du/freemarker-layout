@@ -17,24 +17,22 @@
         <jetty.plugin.version>9.2.3.v20140905</jetty.plugin.version>
     </properties>
 
-    <!--
-	<organization>
-		<name>My Name</name>
-		<url>https://github.com/mygithubaccount/FreemarkerLayout/</url>
-	</organization>
+    <organization>
+        <name>Alejandro Duarte</name>
+        <url>https://github.com/alejandro-du</url>
+    </organization>
 
-	<scm>
-		<url>git://github.com/mygithubaccount/FreemarkerLayout.git</url>
-		<connection>scm:git:git://github.com/mygithubaccount/FreemarkerLayout.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com:/mygithubaccount/${ComponentClassName}.git</developerConnection>
-		<tag>FreemarkerLayout add-on for Vaadin</tag>
-	</scm>
+    <scm>
+        <url>https://github.com/alejandro-du/freemarker-layout.git</url>
+        <connection>scm:git:https://github.com/alejandro-du/freemarker-layout.git</connection>
+        <developerConnection>scm:git:https://github.com/alejandro-du/freemarker-layout.git</developerConnection>
+        <tag>FreemarkerLayout add-on for Vaadin</tag>
+    </scm>
 
 	<issueManagement>
 		<system>GitHub</system>
 		<url>https://github.com/mygithubaccount/FreemarkerLayout/issues</url>
 	</issueManagement>
-    -->
 
     <licenses>
         <license>
