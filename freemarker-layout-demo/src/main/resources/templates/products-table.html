@@ -1,4 +1,4 @@
-<table id="products" class="products">
+<table id="products" class="products", style="display: none">
     <tr>
         <th>Name</th>
         <th>Price</th>
@@ -14,5 +14,9 @@
 </table>
 
 <script>
-    window.$("#products").paging({limit:9});
+    window.$(document).ready(function () {
+        var products = window.$("#products");
+        products.paging({limit: 9});
+        products.css("display", "");
+    });
 </script>
