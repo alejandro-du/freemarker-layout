@@ -1,3 +1,6 @@
+[![Published on Vaadin  Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/freemarkerlayout-add-on)
+[![Stars on vaadin.com/directory](https://img.shields.io/vaadin-directory/star/freemarkerlayout-add-on.svg)](https://vaadin.com/directory/component/freemarkerlayout-add-on)
+
 # FreemarkerLayout
 
 FreemarkerLayout allows you to define templates using the [FreeMarker Template Language](http://freemarker.org) to dynamically generate HTML layouts and add Vaadin components into it.
